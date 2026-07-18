@@ -3,7 +3,7 @@ from datetime import datetime
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
-app = FastAPI(title="Hello Smitha")
+app = FastAPI(title="Hello Anand and Smitha")
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -16,7 +16,7 @@ def home() -> str:
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Smitha</title>
+    <title>Hello Anand and Smitha</title>
     <style>
         :root {{ color-scheme: light dark; }}
         * {{ box-sizing: border-box; margin: 0; padding: 0; }}
@@ -46,7 +46,7 @@ def home() -> str:
 </head>
 <body>
     <div class="card">
-        <h1>Hello Smitha 👋</h1>
+        <h1>Hello Anand and Smitha 👋</h1>
         <div class="date">{date_str}</div>
         <div class="time" id="time">{time_str}</div>
     </div>
